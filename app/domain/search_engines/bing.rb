@@ -21,7 +21,6 @@ module SearchEngines
       result[:items] = ResultParser.parse_bing_items(json['webPages']['value'])
       result
     rescue => e
-      binding.pry
       nil
     end
   end
